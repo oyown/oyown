@@ -12,6 +12,28 @@
    /* ==========================================================================
       Start of custom Webflow CSS
       ========================================================================== */
+
+
+/* REMOVE THIS LATER */
+.to-do{
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 120px;
+}
+
+.to-do  li{
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: #333;
+}
+@media (min-width: 1660px){
+  .to-do{
+    display: block;
+  }
+}
+/* REMOVE THIS LATER */
+
    .w-layout-grid {
      display: -ms-grid;
      display: grid;
