@@ -27,7 +27,13 @@
   text-transform: uppercase;
   color: #333;
 }
-@media (min-width: 1660px){
+
+.to-do li.striked{
+  text-decoration: line-through;
+  color: gray;
+}
+
+@media (min-width: 2500px){
   .to-do{
     display: block;
   }
