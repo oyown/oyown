@@ -3750,7 +3750,6 @@ input[type=email]{
   -moz-appearance: none;
   appearance: none;
   padding: 0;
-  border: 1px solid red;
 }
 
 /* REMOVE THIS LATER */
