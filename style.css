@@ -2154,8 +2154,7 @@ p {
   right: 0%;
   bottom: auto;
   z-index: 999;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding: 18px 0;
   background-color: #fff;
 }
 
@@ -2206,6 +2205,7 @@ p {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  align-items: center;
 }
 
 .menu-items.nav-menu {
@@ -3837,7 +3837,7 @@ p {
   background: #6fcf97;
 }
 
-/* SELECT 2 */
+
 
 /* CTA Bar */
 .oyn-form .text-field{
@@ -3850,4 +3850,14 @@ p {
   font-size: 14px;
   font-weight: 900;
   letter-spacing: 1px;
+}
+
+
+/* Navbar */
+.menu-items.nav-menu .menu-item.is-button{
+  padding: 12px 32px;
+  background: #6fcf97;
+  color: #fff;
+  margin-right: 0;
+  font-size: 16px;
 }
