@@ -2105,81 +2105,6 @@ textarea.w-input, textarea.w-select {
       Start of custom Webflow CSS
       ========================================================================== */
 
-/* REMOVE THIS LATER */
-
-.to-do {
-  display: none;
-  position: fixed;
-  top: 50%;
-  right: 120px;
-}
-
-.to-do li {
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  color: #333;
-}
-
-.to-do li.striked {
-  text-decoration: line-through;
-  color: gray;
-}
-
-@media (min-width: 2500px) {
-  .to-do {
-    display: block;
-  }
-}
-
-/* REMOVE THIS LATER */
-
-/* SELECT 2 */
-
-.select-2 {
-  width: 100% !important;
-}
-
-.select-2 .select2-selection {
-  height: 42px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  border: 0;
-  border-bottom: 1px solid #081521;
-  border-radius: 0;
-  outline: 0;
-}
-
-.select-2 .select2-selection .select2-selection__rendered {
-  padding-left: 0;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.select-2 .select2-selection .select2-selection__arrow {
-  position: relative;
-}
-
-.select-2 .select2-selection .select2-selection__arrow b {
-  border-width: 5px 6px 0 6px;
-  border-color: #081521;
-  transition: all 0.3s ease;
-}
-
-.select-2:hover b, .select-2.select2-container--open b {
-  border-color: #6FCF97;
-}
-
-/* SELECT 2 */
 
 .w-layout-grid {
   display: -ms-grid;
@@ -3820,4 +3745,109 @@ p {
   src: url('https://uploads-ssl.webflow.com/5d5cb8f69a3f3868b509de3d/5df75e6135688cf41318535a_ProspectusL-Bld.woff') format('woff');
   font-weight: 700;
   font-style: normal;
+}
+
+
+/* MY STYLES */
+
+/* REMOVE THIS LATER */
+
+.to-do {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 120px;
+}
+
+.to-do li {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.to-do li.striked {
+  text-decoration: line-through;
+  color: gray;
+}
+
+@media (min-width: 2500px) {
+  .to-do {
+    display: block;
+  }
+}
+
+/* REMOVE THIS LATER */
+
+/* SELECT 2 */
+
+.select2 {
+  width: 100% !important;
+}
+.select2 .select2-selection {
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 0;
+  border-bottom: 1px solid #081521;
+  border-radius: 0;
+  outline: 0;
+}
+.select2 .select2-selection .select2-selection__rendered {
+  padding-left: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.select2 .select2-selection .select2-selection__arrow {
+  position: relative;
+}
+.select2 .select2-selection .select2-selection__arrow b {
+  border-width: 5px 6px 0 6px;
+  border-color: #081521 transparent transparent transparent;
+}
+.select2:hover b{
+  border-color: #6FCF97 transparent transparent transparent !important;
+}
+.select2.select2-container--open b {
+  border-width: 0 6px 5px 6px !important;
+  border-color:  transparent transparent #6FCF97 transparent !important;
+}
+
+/* dropdown */
+.select2-container .select2-dropdown {
+  margin-top: 16px;
+  border: 0;
+  box-shadow: 0 0 42px 4px rgba(0, 0, 0, 0.12);
+}
+.select2-container .select2-dropdown .select2-results__option {
+  padding: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.select2-container .select2-dropdown .select2-results__option.select2-results__option--highlighted {
+  background: #6fcf97;
+}
+
+/* SELECT 2 */
+
+/* CTA Bar */
+.oyn-form .text-field{
+  margin-bottom: 0;
+  border-bottom: 1px solid #081521;
+}
+
+.oyn-form label{
+  text-variant: all-petite-caps;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
