@@ -2692,12 +2692,6 @@ p {
   grid-template-rows: auto auto;
 }
 
-.line {
-  display: none;
-  height: 3px;
-  background-color: #6fcf97;
-}
-
 .times {
   display: none;
   -webkit-box-pack: justify;
@@ -3148,12 +3142,15 @@ p {
   .menu-items.nav-menu {
     position: fixed;
     left: 0%;
-    top: auto;
+    top: 60px;
     right: 0%;
     bottom: 0%;
-    display: none;
     width: 100%;
-    height: 91%;
+    /* display */
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    /* display */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -3169,6 +3166,11 @@ p {
     align-items: center;
     background-color: rgba(8, 21, 33, 0.9);
   }
+
+  .menu-items.nav-menu.is-open{
+    height: calc(100vh - 60px);
+  }
+
   .menu-item {
     padding-right: 0px;
     padding-bottom: 42px;
@@ -3389,19 +3391,6 @@ p {
   .oyn-row {
     padding-right: 1rem;
     padding-left: 1rem;
-  }
-  .menu-items.nav-menu {
-    left: 0%;
-    top: 76px;
-    right: 0%;
-    bottom: 0%;
-    display: none;
-    height: 100%;
-    padding-top: 30%;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
   }
   .banner.oyn-section {
     margin-bottom: 60px;
@@ -3860,4 +3849,39 @@ p {
   color: #fff;
   margin-right: 0;
   font-size: 16px;
+}
+
+/* mobile navbar */
+@media screen and (min-width:1025px){
+  .icn_menu{
+    display: none;  
+  }
+}
+.icn_menu .burger{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.icn_menu .burger .line{
+  width: 26px;
+  height: 2px;
+  background-color: #081521;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+}
+
+.icn_menu .burger .line:nth-child(2){
+  width: 20px;
+}
+
+.icn_menu .burger.is-close .line:first-child{
+  transform: translateY(8px) rotate(45deg);
+}
+.icn_menu .burger.is-close .line:last-child{
+  transform: translateY(-7px) rotate(-45deg);
+}
+.icn_menu .burger.is-close .line:nth-child(2){
+  opacity: 0;
 }

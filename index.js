@@ -10,4 +10,12 @@ $(document).ready(function(){
             minimumResultsForSearch: Infinity
         });
     })
+
+    $(".icn_menu").click(function(){
+        $(this).find(".burger").toggleClass("is-close");
+        $(".menu-items.nav-menu").toggleClass("is-open");
+        // this toggle class
+        // navbar toggle class
+        // body overflow hidden
+    })
 })
