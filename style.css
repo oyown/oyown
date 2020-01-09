@@ -2246,7 +2246,7 @@ p {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  max-height: 900px;
+  max-height: 1080px;
   margin-top: 0px;
   margin-bottom: 120px;
 }
@@ -3131,6 +3131,9 @@ p {
 @media(min-width: 1600px) {
   .heading {
     font-size: 102px;
+  }
+  .bg-cta{
+    max-width: 100%;
   }
 }
 
