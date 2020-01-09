@@ -2351,7 +2351,7 @@ p {
 }
 
 .oyn-label {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   color: #bdbdbd;
   font-size: 20px;
   text-transform: uppercase;
@@ -2387,6 +2387,7 @@ p {
   font-size: 20px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
+  box-shadow: 0;
 }
 
 .form-submit {
@@ -3744,7 +3745,7 @@ p {
 .to-do {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 40%;
   right: 120px;
 }
 
@@ -3832,6 +3833,7 @@ p {
 .oyn-form .text-field{
   margin-bottom: 0;
   border-bottom: 1px solid #081521;
+  width: 100%;
 }
 
 .oyn-form label{
