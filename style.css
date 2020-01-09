@@ -3745,11 +3745,13 @@ p {
 /* MY STYLES */
 
 /* general reset */
-/* input[type=email] {   
+input[type=email], input[type="text"]{   
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-} */
+  padding: 0;
+  border: 1px solid red;
+}
 
 /* REMOVE THIS LATER */
 
