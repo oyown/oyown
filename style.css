@@ -2387,7 +2387,8 @@ p {
   font-size: 20px;
   letter-spacing: 0.4px;
   text-transform: uppercase;
-  box-shadow: 0;
+  box-shadow: none;
+  outline: 0;
 }
 
 .form-submit {
