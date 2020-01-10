@@ -3483,9 +3483,17 @@ p {
   .play {
     margin-bottom: 60px;
   }
-  .counter.mobile-only{
+
+  .counter{
     margin-bottom: 60px;
-    overflow: hidden;
+  }
+
+  .stats{
+    display: none;
+  }
+
+  .testimonials{
+    position: relative;
   }
   
   .testimony {
