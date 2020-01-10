@@ -2302,10 +2302,8 @@ p {
   z-index: -1;
   width: 100%;
   max-width: 900px;
-  -webkit-transform: rotateX(0.1deg) rotateY(0.1deg) rotateZ(0deg) translate(-50%, -20%);
-  transform: rotateX(0.1deg) rotateY(0.1deg) rotateZ(0deg) translate(-50%, -20%);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  -webkit-transform: translate(-50%, -20%);
+  transform: translate(-50%, -20%);
 }
 
 .bg-cta.final-sell {
