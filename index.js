@@ -11,11 +11,18 @@ $(document).ready(function(){
         });
     })
 
+    // sidebar for mobile
     $(".icn_menu").click(function(){
         $(this).find(".burger").toggleClass("is-close");
         $(".menu-items.nav-menu").toggleClass("is-open");
-        // this toggle class
-        // navbar toggle class
         // body overflow hidden
     })
+
+    // navbar scroll to sections
+    $("a[data-toscroll]").click(function() {
+        var toScroll = "." + $(this).attr("data-toscroll");
+        $('html, body').animate({
+            scrollTop: $(toScroll).offset().top - 120
+        }, 2000);
+    });
 })
