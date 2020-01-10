@@ -3864,12 +3864,29 @@ input[type=email]{
 
 
 /* Navbar */
+.navbar .icn_mail{
+  display: none;
+}
 .menu-items.nav-menu .menu-item.is-button{
   padding: 12px 32px;
   background: #6fcf97;
   color: #fff;
   margin-right: 0;
   font-size: 16px;
+}
+
+/* Navbar for other pages */
+.navbar.only-mail .menu-item:not(.is-button), .navbar.only-mail .icn_menu{
+  display: none;
+}
+
+.navbar.only-mail .icn_mail{
+  display: block;
+  height: 24px;
+}
+
+.navbar.only-mail .menu-items{
+  justify-content: flex-end;
 }
 
 /* mobile navbar */
