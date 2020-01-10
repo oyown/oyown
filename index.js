@@ -20,6 +20,11 @@ $(document).ready(function(){
 
     // navbar scroll to sections
     $("a[data-toscroll]").click(function() {
+
+        // remove menu if responsive
+        $(".menu-items.nav-menu.is-open").removeClass("is-open");
+        $(".burger.is-close").removeClass("is-close");
+
         var toScroll = "." + $(this).attr("data-toscroll");
         $('html, body').animate({
             scrollTop: $(toScroll).offset().top - 120
