@@ -2401,8 +2401,8 @@ p {
   position: relative;
 }
 
-.banner-cta.final-sell {
-  margin-bottom: 120px;
+.final-sell{
+   margin-bottom: 120px;
 }
 
 .work {
