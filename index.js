@@ -1,4 +1,10 @@
 $(document).ready(function(){
+
+    // initials
+    var windowHeight = $(window).height();
+    var windowWidth = $(window).width();
+
+
     // REMOVE THIS LATER
     $(".to-do li").click(function(e){
         $(this).toggleClass("striked");
@@ -30,4 +36,10 @@ $(document).ready(function(){
             scrollTop: $(toScroll).offset().top - 120
         }, 2000);
     });
+
+
+    // MOBILE ONLY
+    if(windowWidth <= 767){
+
+    }
 })

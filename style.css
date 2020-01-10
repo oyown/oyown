@@ -3368,7 +3368,16 @@ p {
   }
 }
 
+@media screen and (min-width: 780px){
+  .mobile-only{
+    display: none !important;
+  }
+}
+
 @media (max-width: 767px) {
+  .desktop-only{
+    display: none !important;
+  }
   .footer {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -3474,15 +3483,11 @@ p {
   .play {
     margin-bottom: 60px;
   }
-  .counter {
+  .counter.mobile-only{
     margin-bottom: 60px;
+    overflow: hidden;
   }
-  .stats {
-    display: none;
-  }
-  .testimonials {
-    position: relative;
-  }
+  
   .testimony {
     max-width: 100%;
     -webkit-box-orient: vertical;
