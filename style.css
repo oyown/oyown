@@ -2942,12 +2942,6 @@ p {
   margin-bottom: 120px;
 }
 
-.info {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 920px;
-}
-
 .grid-default {
   display: -ms-grid;
   display: grid;
