@@ -2965,6 +2965,10 @@ p {
   grid-template-rows: auto;
 }
 
+.block-30-70.reverse-grid .grid-default{
+  direction: rtl;
+}
+
 .grid-default.grid-title {
   grid-column-gap: 147px;
   -ms-grid-columns: 5fr 2.5fr;
