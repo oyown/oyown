@@ -2965,8 +2965,12 @@ p {
   grid-template-rows: auto;
 }
 
-.block-30-70.reverse-grid .grid-default{
+.reverse-grid .grid-default{
   direction: rtl;
+}
+
+.reverse-grid .grid-default .info{
+  direction: ltr;
 }
 
 .grid-default.grid-title {
