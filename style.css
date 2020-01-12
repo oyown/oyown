@@ -2965,6 +2965,13 @@ p {
   grid-template-rows: auto;
 }
 
+.grid-default.grid-title {
+  grid-column-gap: 147px;
+  -ms-grid-columns: 5fr 2.5fr;
+  grid-template-columns: 5fr 2.5fr;
+}
+
+/* reverse grid */
 .reverse-grid .grid-default{
   direction: rtl;
 }
@@ -2973,10 +2980,11 @@ p {
   direction: ltr;
 }
 
-.grid-default.grid-title {
-  grid-column-gap: 147px;
-  -ms-grid-columns: 5fr 2.5fr;
-  grid-template-columns: 5fr 2.5fr;
+/* br styles */
+.grid-default .info br{
+  display: block;
+  content: "";
+  margin-top: 20px;
 }
 
 .chips {
@@ -3415,6 +3423,14 @@ p {
   .chip {
     margin-right: 0px;
     margin-bottom: 24px;
+  }
+
+  /* project grid */
+  .block-30-70, .block-70-30, .block-100{
+    margin-bottom: 60px;
+  }
+  br{
+    margin-top: 12px;
   }
 }
 
