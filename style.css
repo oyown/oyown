@@ -3058,7 +3058,7 @@ p {
 .chip-text {
   margin-left: 8px;
   color: var(--color-dark);
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
@@ -3123,9 +3123,10 @@ p {
 
 .project-text {
   margin-top: 52px;
-  color: var(--color-gray);
-  font-size: 16px;
+  color: var(--color-dark);
+  font-size: 18px;
   line-height: 32px;
+  font-weight: 400;
 }
 
 .block-100 {
@@ -3161,15 +3162,17 @@ div[class*="block-"] .sticky-content .info-title.d-none{
 .info-title {
   margin-bottom: 12px;
   color: var(--color-dark);
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
 
 .info-text {
-  color: var(--color-gray);
-  font-size: 16px;
+  color: var(--color-dark);
+  font-size: 18px;
   line-height: 24px;
+  font-weight: 400;
+  opacity: 0.8;
 }
 
 .full-media {
