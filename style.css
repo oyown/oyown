@@ -6,15 +6,27 @@
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+
+/* fonts */
+@font-face {
+  font-family: 'Prospectusl bld';
+  src: url('https://uploads-ssl.webflow.com/5d5cb8f69a3f3868b509de3d/5df75e6135688cf41318535a_ProspectusL-Bld.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* VARIABLES */
 
 :root {
   --color-primary: #6fcf97;
   --color-dark: #081521;
   --color-gray: #bdbdbd;
+
+  --primary-font: 'Roboto Mono', sans-serif;
+  --accent-font:'Prospectusl bld', 'Times New Roman', sans-serif;
 }
 
-/* VARIABLES */
+/* FONTS */
 
 html {
   font-family: sans-serif;
@@ -2138,7 +2150,7 @@ p {
 }
 
 .body {
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: var(--primary-font);
   line-height: 1;
   font-weight: 700;
   letter-spacing: .7px;
@@ -2223,7 +2235,7 @@ p {
 
 .menu-item {
   padding-right: 20px;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: var(--primary-font);
   color: var(--color-gray);
   font-size: 24px;
   font-weight: 700;
@@ -2279,7 +2291,7 @@ p {
 .heading {
   margin-top: 0px;
   margin-bottom: 6px;
-  font-family: 'Prospectusl bld', 'Times New Roman', sans-serif;
+  font-family: var(--accent-font);
   color: var(--color-gray);
   font-size: 72px;
   line-height: 1;
@@ -2401,7 +2413,7 @@ p {
 .form-submit {
   margin-left: 62px;
   background-color: rgba(255, 255, 255, 0);
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: var(--primary-font);
   color: var(--color-primary);
   font-size: 24px;
 }
@@ -2518,7 +2530,7 @@ p {
   -ms-flex-align: start;
   align-items: flex-start;
   background-color: #fff;
-  font-family: 'Prospectusl bld', 'Times New Roman', sans-serif;
+  font-family: var(--accent-font);
   font-size: 72px;
 }
 
@@ -2667,7 +2679,7 @@ p {
 
 .italic-text {
   width: 100%;
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: var(--primary-font);
   color: var(--color-dark);
   line-height: 20px;
   font-style: italic;
@@ -3040,7 +3052,7 @@ p {
 }
 
 .project-header {
-  font-family: 'Prospectusl bld', 'Times New Roman', sans-serif;
+  font-family: var(--accent-font);
   font-size: 72px;
   text-align: left;
 }
@@ -3815,12 +3827,7 @@ div[class*="block-"] .sticky-content .info-title.d-none{
   }
 }
 
-@font-face {
-  font-family: 'Prospectusl bld';
-  src: url('https://uploads-ssl.webflow.com/5d5cb8f69a3f3868b509de3d/5df75e6135688cf41318535a_ProspectusL-Bld.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
+
 
 /* MY STYLES */
 
@@ -4043,7 +4050,7 @@ input[type=email] {
   font-size: 32px;
   display: flex;
   flex-direction: column;
-  font-family: 'Prospectusl bld', 'Times New Roman', sans-serif;
+  font-family: var(--accent-font);
   margin-right: 12px;
   text-transform: capitalize;
 }
