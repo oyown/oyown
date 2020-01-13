@@ -2268,7 +2268,7 @@ p {
   padding-right: 20px;
   font-family: var(--primary-font);
   color: var(--color-gray);
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
@@ -2462,7 +2462,7 @@ p {
 
 .heading-2 {
   color: var(--color-dark);
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -2634,6 +2634,7 @@ p {
 }
 
 .stat-text {
+  font-size: 16px;
   margin-top: 12px;
   color: rgba(8, 21, 33, 0.5);
   text-transform: uppercase;
@@ -2854,13 +2855,12 @@ p {
   justify-content: flex-start;
 }
 
-.text-block-5 {
+.about-text {
   margin-top: 28px;
   color: var(--color-dark);
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.7px;
-  text-transform: uppercase;
 }
 
 .grid-me {
@@ -2892,7 +2892,7 @@ p {
 }
 
 .point-tick {
-  height: 34px;
+  height: 28px;
 }
 
 .client-point {
@@ -2923,17 +2923,17 @@ p {
   align-items: center;
 }
 
-.title {
-  margin-left: 20px;
+.point-text .title {
+  margin-left: 16px;
   color: var(--color-dark);
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
 }
 
 .point-para {
   margin-top: 4px;
-  margin-left: 54px;
+  margin-left: 44px;
   color: var(--color-gray);
   line-height: 20px;
 }
