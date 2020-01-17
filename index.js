@@ -4,6 +4,9 @@ $(document).ready(function(){
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
 
+    var API_KEY_AMZ = "https://abzlgn8azi.execute-api.us-east-1.amazonaws.com/oyn-cta-bar-api-STAGE_1/oyn-cta-bar-resource";
+    var API_KEY_ATB = "https://api.airtable.com/v0/appLr6hjofLchsptr/Applicants?api_key=keyFeumDXxulyhMLA";
+
 
     // REMOVE THIS LATER
     $(".to-do li").click(function(e){
@@ -36,6 +39,31 @@ $(document).ready(function(){
             scrollTop: $(toScroll).offset().top - 120
         }, 2000);
     });
+
+    // form submit
+    $(".form-submit").click(function (e) {
+
+        e.preventDefault();
+
+        var parent = $(this).parent();
+
+        var form_who = $(parent).find("select[name='who']").val(),
+            form_need = $(parent).find("select[name='need']").val(),
+            form_email = $(parent).find("input[type='email']").val();
+
+        axios.post(API_KEY_ATB, {
+            "fields": {
+                "who": form_who,
+                "need": form_need,
+                "email": form_email
+            }
+        }).then(function (response) {
+            // console.log(response);
+        })
+            .catch(function (error) {
+                // console.log(error);
+            })
+    })
 
 
     // MOBILE ONLY

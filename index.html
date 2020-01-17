@@ -19,6 +19,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.1/axios.js"></script>
+    
 
     <!-- My Fonts -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -76,14 +78,14 @@
                         <div class="oyn-form">
                             <form id="email-form" name="email-form" data-name="Email Form" class="form">
                                 <div class="form-select"><label for="role" class="oyn-label">YOU'RE A</label><select
-                                        id="role" name="role" required="" data-name="role" class="oyn-select">
-                                        <option value="founder">Founder</option>
+                                        id="role" name="who" required="" data-name="role" class="oyn-select">
+                                        <option selected value="founder">Founder</option>
                                         <option value="recruiter">Recruiter</option>
                                     </select></div>
                                 <div class="form-select"><label for="role-2" class="oyn-label">looking
-                                        for</label><select id="role-2" name="role-2" required="" data-name="Role 2"
+                                        for</label><select id="role-2" name="need" required="" data-name="Role 2"
                                         class="oyn-select">
-                                        <option value="uidesign">An UI Designer</option>
+                                        <option selected value="uidesign">An UI Designer</option selected>
                                         <option value="uxdesign">An UX Designer</option>
                                         <option value="consult">Consultation</option>
                                     </select></div>
@@ -357,7 +359,7 @@
                                         <option value="consult">Consultation</option>
                                     </select></div>
                                 <div class="form-text"><label for="email" class="oyn-label">let's talk at</label><input
-                                        type="email" class="text-field" maxlength="256" name="email"
+                                        type="email" required class="text-field" maxlength="256" name="email"
                                         data-name="email" placeholder="Enter your email" id="email" required=""></div>
                                 <input type="submit" value="Send me an email" data-wait="Please wait..."
                                     class="form-submit w-button">
