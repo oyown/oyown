@@ -4,7 +4,7 @@ $(document).ready(function(){
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
 
-    var API_KEY_AMZ = "https://abzlgn8azi.execute-api.us-east-1.amazonaws.com/oyn-cta-bar-api-STAGE_1";
+    var API_KEY_AMZ = "https://abzlgn8azi.execute-api.us-east-1.amazonaws.com/oyn-cta-bar-api-STAGE_1/oyn-cta-bar-resource";
     var API_KEY_ATB = "https://api.airtable.com/v0/appLr6hjofLchsptr/Applicants?api_key=keyFeumDXxulyhMLA";
 
 
