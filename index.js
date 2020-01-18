@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     // initials
     var windowHeight = $(window).height();
@@ -9,26 +9,26 @@ $(document).ready(function(){
 
 
     // REMOVE THIS LATER
-    $(".to-do li").click(function(e){
+    $(".to-do li").click(function (e) {
         $(this).toggleClass("striked");
     })
 
     // Select 2
-    $("select").each(function(e){
+    $("select").each(function (e) {
         $(this).select2({
             minimumResultsForSearch: Infinity
         });
     })
 
     // sidebar for mobile
-    $(".icn_menu").click(function(){
+    $(".icn_menu").click(function () {
         $(this).find(".burger").toggleClass("is-close");
         $(".menu-items.nav-menu").toggleClass("is-open");
         // body overflow hidden
     })
 
     // navbar scroll to sections
-    $("a[data-toscroll]").click(function() {
+    $("a[data-toscroll]").click(function () {
 
         // remove menu if responsive
         $(".menu-items.nav-menu.is-open").removeClass("is-open");
@@ -52,11 +52,14 @@ $(document).ready(function(){
             form_email = $(parent).find("input[type='email']").val();
 
         axios.post(API_KEY_AMZ, {
-            "fields": {
-                "who": form_who,
-                "need": form_need,
-                "email": form_email
-            }
+            // "fields": {
+            //     "who": form_who,
+            //     "need": form_need,
+            //     "email": form_email
+            // }
+            "who": form_who,
+            "need": form_need,
+            "email": form_email
         }).then(function (response) {
             // console.log(response);
         })
@@ -67,7 +70,7 @@ $(document).ready(function(){
 
 
     // MOBILE ONLY
-    if(windowWidth <= 767){
+    if (windowWidth <= 767) {
 
     }
 })
