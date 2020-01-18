@@ -51,21 +51,47 @@ $(document).ready(function () {
             form_need = $(parent).find("select[name='need']").val(),
             form_email = $(parent).find("input[type='email']").val();
 
-        axios.post(API_KEY_AMZ, {
-            // "fields": {
-            //     "who": form_who,
-            //     "need": form_need,
-            //     "email": form_email
-            // }
+        // axios.post(API_KEY_AMZ, {
+        //     // "fields": {
+        //     //     "who": form_who,
+        //     //     "need": form_need,
+        //     //     "email": form_email
+        //     // }
+        //     "who": form_who,
+        //     "need": form_need,
+        //     "email": form_email
+        // }).then(function (response) {
+        //     // console.log(response);
+        // })
+        //     .catch(function (error) {
+        //         // console.log(error);
+        //     })
+
+        var data = {
             "who": form_who,
             "need": form_need,
             "email": form_email
-        }).then(function (response) {
-            // console.log(response);
-        })
-            .catch(function (error) {
-                // console.log(error);
-            })
+        };
+
+        $.ajax({
+            type: "POST",
+            url: API_KEY_AMZ,
+            dataType: "json",
+            crossDomain: "true",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(data),
+
+
+            success: function () {
+                // clear form and show a success message
+                console.log("Successfull");
+                // document.getElementById("contact-form").reset();
+            },
+            error: function () {
+                // show an error message
+                console.log("UnSuccessfull");
+            }
+        });
     })
 
 
