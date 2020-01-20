@@ -15,32 +15,6 @@
   font-style: normal;
 }
 
-/* Stilu
-@font-face{
-  font-family: 'Stilu';
-  src: url('./Fonts/Stilu/stilu-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face{
-  font-family: 'Stilu';
-  src: url('./Fonts/Stilu/stilu-semibold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face{
-  font-family: 'Stilu';
-  src: url('./Fonts/Stilu/stilu-bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face{
-  font-family: 'Stilu';
-  src: url('./Fonts/Stilu/stilu-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-} */
-
 /* VARIABLES */
 
 :root {

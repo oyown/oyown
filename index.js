@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     // initials
+    var $window = $(window);
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
 
@@ -51,22 +52,6 @@ $(document).ready(function () {
             form_need = $(parent).find("select[name='need']").val(),
             form_email = $(parent).find("input[type='email']").val();
 
-        // axios.post(API_KEY_AMZ, {
-        //     // "fields": {
-        //     //     "who": form_who,
-        //     //     "need": form_need,
-        //     //     "email": form_email
-        //     // }
-        //     "who": form_who,
-        //     "need": form_need,
-        //     "email": form_email
-        // }).then(function (response) {
-        //     // console.log(response);
-        // })
-        //     .catch(function (error) {
-        //         // console.log(error);
-        //     })
-
         var data = {
             "who": form_who,
             "need": form_need,
@@ -93,6 +78,11 @@ $(document).ready(function () {
             }
         });
     })
+
+    //scroll events
+    $window.scroll(function(){
+        var $scrollTop = $window.scrollTop();
+    });
 
 
     // MOBILE ONLY
