@@ -84,6 +84,9 @@ $(document).ready(function () {
         var $scrollTop = $window.scrollTop();
     });
 
+    //image flash
+    $(".img-flash img")
+
 
     // MOBILE ONLY
     if (windowWidth <= 767) {
